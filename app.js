@@ -1,10 +1,12 @@
-const list = document.querySelector('.radios');
-const radios = document.querySelector('.radios li');
-
-list.addEventListener('click', e => {
-  if (e.target.classList.contains('rde-player-btn-play-pause')) {
-    e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.children[2].children[1].classList.toggle(
-      'text-danger'
-    );
-  }
+const radioNos = document.querySelectorAll('.no');
+const radioTitles = document.querySelectorAll('.radio-title');
+let counter = 1;
+Array.from(radioNos).forEach(no => {
+  no.style.fontSize = '1.4rem';
+  no.textContent = counter;
+  counter++;
+});
+Array.from(radioTitles).forEach(radio => {
+  radio.classList.add('bigger');
+  radio.classList.add('text-secondary');
 });
