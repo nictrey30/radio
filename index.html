@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/2c626d78c1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <style>
+    .fas {
+      font-size: 40px;
+    }
+
+    .title {
+      max-width: fit-content;
+      margin: 0 auto;
+      border-radius: 20px;
+    }
+  </style>
+  <title>radios</title>
+</head>
+
+<body>
+  <div class="container text-primary mx-auto my-4 text-center">
+    <h4 class="title display-4 text-white bg-dark p-2">Cucu's radios</h4>
+    <div class="lists">
+      <ul class=" radios list-group text-left mx-auto my-3 col-6">
+        <li class="radio list-group-item">
+          <h4>KEXP</h4>
+
+          <script>(function (d, s) { if (!window.rel) { s = d.createElement("script"); s.type = "text/javascript"; s.async = true; s.id = "radio-de-embedded"; s.src = "//www.radio.net/inc/microsite/js/full.js"; d.getElementsByTagName("head")[0].appendChild(s); window.rel = true; } }(document));
+          </script>
+
+          <div class="radio-controls d-flex justify-content-between">
+            <div class="ng-app-embedded">
+              <div ui-view class="microsite embedded-radio-player" data-playerwidth="340px"
+                data-playertype="web_embedded" data-playstation="kxot"
+                data-apikey="df04ff67dd3339a6fc19c9b8be164d5b5245ae93"></div>
+            </div>
+            <div class="music-icon">
+              <i class="fas fa-music"></i>
+            </div>
+          </div>
+        </li>
+
+        <li class="radio list-group-item">
+          <h4>DeepFM</h4>
+
+          <script>(function (d, s) { if (!window.rel) { s = d.createElement("script"); s.type = "text/javascript"; s.async = true; s.id = "radio-de-embedded"; s.src = "//www.radio.net/inc/microsite/js/full.js"; d.getElementsByTagName("head")[0].appendChild(s); window.rel = true; } }(document));</script>
+
+          <div class="radio-controls d-flex justify-content-between">
+            <div class="ng-app-embedded">
+              <div ui-view class="microsite embedded-radio-player" data-playerwidth="340px"
+                data-playertype="web_embedded" data-playstation="deepfm"
+                data-apikey="df04ff67dd3339a6fc19c9b8be164d5b5245ae93"></div>
+            </div>
+            <div class="music-icon">
+              <i class="fas fa-music"></i>
+            </div>
+          </div>
+        </li>
+
+        <li class="radio list-group-item">
+          <h4>DanceFM</h4>
+
+          <script>(function (d, s) { if (!window.rel) { s = d.createElement("script"); s.type = "text/javascript"; s.async = true; s.id = "radio-de-embedded"; s.src = "//www.radio.net/inc/microsite/js/full.js"; d.getElementsByTagName("head")[0].appendChild(s); window.rel = true; } }(document));</script>
+
+          <div class="radio-controls d-flex justify-content-between">
+            <div class="ng-app-embedded">
+              <div ui-view class="microsite embedded-radio-player" data-playerwidth="340px"
+                data-playertype="web_embedded" data-playstation="dancefmro"
+                data-apikey="df04ff67dd3339a6fc19c9b8be164d5b5245ae93"></div>
+            </div>
+            <div class="music-icon">
+              <i class="fas fa-music"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
